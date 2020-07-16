@@ -6,7 +6,7 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/posts')
+    fetch('https://foodblog-api.herokuapp.com/posts')
       .then((data) => data.json())
       .then((res) => {
         const newPosts = res;
